@@ -19,13 +19,29 @@ const setWeatherData = (data) => {
     humidity: data.main.humidity,
     pressure: data.main.pressure,
     temperature: data.main.temp,
-    date: "proximamente",
+    date: getDate(),
   };
 
   Object.keys(weatherInformation).forEach((key) => {
     document.getElementById(key).textContent = weatherInformation[key];
   });
 };
+
+
+const getDate= () =>{
+   
+    let newDate = new Date();
+    let enUSFormatter = new Intl.DateTimeFormat("es-AR", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+
+    return enUSFormatter.format(newDate)
+
+
+}
 
 const onLoad = () => {
   navigator.geolocation.getCurrentPosition(fetchData);
