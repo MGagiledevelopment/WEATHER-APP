@@ -1,9 +1,11 @@
-const apiKey = '08b0ff2709d21f21317b70ec38ddc947'
+const apiKey = '09d548a33db0542ad09ffa093324e81a'
 
 const fetchData = position =>{
-    const { latitude, longitude } = position.coords
- const myPetition = fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
-   myPetition.then(data => console.log(data))
+    const { latitude, longitude } = position.coords //desestructuring para obtener data de esos dos datos especificos //
+ const myPetition = fetch(`http://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
+   myPetition.then(response => response.json())
+   .then(data => console.log(data))
+   
 console.log(position)
 }
 
