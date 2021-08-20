@@ -25,7 +25,24 @@ const setWeatherData = (data) => {
   Object.keys(weatherInformation).forEach((key) => {
     document.getElementById(key).textContent = weatherInformation[key];
   });
+
+ cleaner();
+
 };
+
+// para renderizar loader
+
+const cleaner = () =>{
+  let weatherbox = document.getElementById('weather-box');
+  let loader = document.getElementById('loader')
+
+  weatherbox.style.display = 'flex'
+  loader.style.display = 'none'
+  
+}
+
+
+// para obtener la fecha //
 
 const getDate = () => {
   let newDate = new Date();
@@ -39,6 +56,7 @@ const getDate = () => {
   return enUSFormatter.format(newDate);
 };
 
+//para obtener la localizacion del usuario
 const onLoad = () => {
   navigator.geolocation.getCurrentPosition(fetchData);
 };
