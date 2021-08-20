@@ -27,21 +27,17 @@ const setWeatherData = (data) => {
   });
 };
 
+const getDate = () => {
+  let newDate = new Date();
+  let enUSFormatter = new Intl.DateTimeFormat("es-AR", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
-const getDate= () =>{
-   
-    let newDate = new Date();
-    let enUSFormatter = new Intl.DateTimeFormat("es-AR", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })
-
-    return enUSFormatter.format(newDate)
-
-
-}
+  return enUSFormatter.format(newDate);
+};
 
 const onLoad = () => {
   navigator.geolocation.getCurrentPosition(fetchData);
