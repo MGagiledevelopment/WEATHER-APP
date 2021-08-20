@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +7,59 @@
 html {
   font-size: 62.5%;
 }
-
 .container {
-  /* border: 4px solid red; */
-  background-color: #d6c9c9;
+  background-color: #37393a;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .weather-box {
-  background-color: #c7d3dd;
+  background-color: #77b6ea;
   padding: 2rem;
-  width: 30rem;
+  width: 38rem;
   height: 20rem;
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 2rem;
-  -webkit-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 1);
-  -moz-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 1);
-  box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 1);
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(226, 224, 224, 0.29);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(226, 224, 224, 0.29);
+  box-shadow: 0px 0px 27px 0px rgba(226, 224, 224, 0.29);
+}
+.part1 {
+  background-color: #37393a;
+  color: #77b6ea;
+  height: 10rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.part1 :nth-child(1) {
+  font-size: 1.5rem;
+}
+#location,
+#date,
+#condition {
+  margin: 0.3rem;
+}
+#temperature,
+#pressure,
+#humidity {
+  margin-left: 0.3rem;
+}
+.part2 {
+  color: #37393a;
+}
+.information {
+  display: flex;
+  align-items: center;
+  width: 11rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
