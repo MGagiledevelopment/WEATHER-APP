@@ -7,6 +7,13 @@
 html {
   font-size: 62.5%;
 }
+
+@media screen and (max-width: 375px) {
+  .container{
+    padding:10rem;
+  }
+  .part2{padding: 0.9rem;}
+}
 .container {
   background-color: #37393a;
   height: 100vh;
