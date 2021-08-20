@@ -7,5 +7,7 @@
 # Herramientas utilizadas:
 
 ➤ HTML
+
 ➤ CSS
+
 ➤ JAVASCRIPT
