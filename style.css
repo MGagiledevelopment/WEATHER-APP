@@ -14,9 +14,13 @@ html {
   }
   .part2{padding: 0.9rem;}
 }
+body{
+  height: 100vh;
+}
+
 .container {
   background-color: #37393a;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
