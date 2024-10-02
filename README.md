@@ -1,13 +1,8 @@
 # WEATHER APP ☀️🌥
 
-👨🏽‍💻Aplicacion simple que consume una API meteorológica para mostrar datos sobre el clima según la ubicación del usuario.
+👨🏽‍💻Simple application that consumes a weather API to display weather data based on the user's location.
 
-🔎El trabajo realizado lo podes ver en este link: https://api-app-weather.netlify.app (no olvides autorizar la ubicación del navegador que estes utilizando 😉)
+🔎You can see the work done at this link: https://api-app-weather.netlify.app (don't forget to authorize the location of the browser you are using 😉)
 
-# Herramientas utilizadas:
-
-➤ HTML
-
-➤ CSS
-
-➤ JAVASCRIPT
+# Tools used:
+HTML,CSS and JAVASCRIPT
